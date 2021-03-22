@@ -1,0 +1,275 @@
+
+/*Navigation*/
+
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+    font-family: 'Exo', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+.logo {
+    width: 23%;
+    padding: 1%;
+    display: inline;
+    text-align: center;
+    justify-content: space-around;
+}
+
+#navLogo {
+    width: 30px;
+    height: 30px;
+}
+.navigation {
+    display: flex;
+    background-color: #01090e;
+}
+nav {
+    width: 73%;
+    padding: 1%;
+    height: 50px;
+    display: inline;
+    list-style-type: none;
+    width: 100%;
+    margin: 0;
+    justify-content: left;
+    color: white;
+}
+
+/*Hero Image Content*/
+
+.heroImg {
+    height: 600px;
+    padding: 15px;
+    font-family: 'Exo', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: white;
+    background-color: #0E1011;
+    display: inline-block;
+    justify-content: flex-start;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 50px;
+}
+
+#heroimage {
+    height: 400px;
+    display: inline-block;
+}
+
+.content {
+    width: 500px;
+    margin: 0 auto;
+    display: inline;
+}
+
+button {
+    background-color: white;
+    color: black;
+    width: 150px;
+    height: 40px;
+    font-family: 'Raleway';
+    font-weight: 600;
+    padding: 5px;
+}
+
+/*Footer*/
+
+footer {
+    background-color: #373738;
+    color: #ffffff;
+    padding: 25px;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    margin: 0;
+
+}
+
+#footerUL {
+    list-style: none;
+    display: inline-block;
+    display: inline;
+}
+
+/*Hero2 Section*/
+
+.HeroSection2 {
+    font-family: 'Raleway', 'Exo', 'Roboto';
+    background-color:  #222324;
+    color: #ffffff;
+    text-align: center;
+    padding: 50px;
+}
+
+/*Skills Section*/
+.mySkills {
+    font-family: 'Proxima Nova', 'Exo', 'Roboto';
+    background-color: #15262D;
+    color:#ffffff;
+    margin: 0%;
+    padding: 10px;
+}
+.flexContainer {
+    display: flex;
+}
+#skill1 {
+    width: 33%;
+    margin: 40px;
+    padding: 5px;
+}
+#skill2 {
+    width: 33%;
+    margin: 40px;
+    padding: 5px;
+}
+#skill3 {
+    width: 33%;
+    margin: 40px;
+    padding: 5px;
+}
+#skill1image {
+    width: 300px;
+    margin: 40px;
+    padding: 5px;
+}
+#skill2image {
+    width: 300px;
+    margin: 40px;
+    padding: 5px;
+}
+#skill3image {
+    width: 300px;
+    margin: 40px;
+    padding: 5px;
+}
+
+/*My Work Section*/
+
+.myWork {
+    font-family: 'Proxima Nova', 'Exo', 'Roboto';
+    background-color: #0E1011;
+    color:#ffffff;
+    margin: auto;
+    padding: 10px;
+}
+
+h1 {
+    font-weight: 500;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.workGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "project1 project1"
+    "project2 project2"
+    "project3 project3"
+    ;
+    padding: 20px;
+}
+
+#Project1 {
+    display: grid;
+    padding: 50px;
+    grid-area: project1;
+    grid-template-areas:
+    "project1img project1desc"
+}
+
+#Project2 {
+    display: grid;
+    padding: 50px;
+    grid-area: project2;
+    grid-template-areas:
+    "project2desc project2img"
+
+}
+#Project3 {
+    display: grid;
+    padding: 50px;
+    grid-area: project3;
+    grid-template-areas:
+    "project3img project3desc"
+  
+}
+
+#project1img {
+    width: 700px;
+    height: auto;
+    grid-area: project1img;
+}
+#project2img {
+    width: 700px;
+    height: auto;
+    grid-area: project2img;
+}
+#project3img {
+    width: 700px;
+    height: auto;
+    grid-area: project3img;
+}
+ 
+#project1desc {
+    grid-area: project1desc;
+    padding: 100px;
+}
+#project2desc {
+    grid-area: project2desc;
+    padding: 100px;
+}
+#project3desc {
+    grid-area: project3desc;
+    padding: 100px;
+}
+
+h3 {
+    font-weight: 500;
+    color: #ffffff;
+    padding: 35px;
+    text-align: center;
+}
+
+/*Media Queries*/
+@media only screen and (max-width: 600px) {
+    .flexContainer {
+        flex-direction: column;
+    }
+    #skill1 #skill2 #skill3 {
+        width: 100%;
+    }
+    .workGrid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "project1" 
+        "project1"
+        "project2" 
+        "project2"
+        "project3" 
+        "project3"
+        ;
+    }
+    #project1 {
+        grid-template-areas: 
+        "project1img" 
+        "project1desc"
+        ;
+    }
+    #project2 {
+        grid-template-areas: 
+        "project2img" 
+        "project2desc"
+        ;
+    }
+    #project3 {
+        grid-template-areas: 
+        "project3img" 
+        "project3desc"
+        ;
+    }
+}
