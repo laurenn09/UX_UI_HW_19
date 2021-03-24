@@ -1,27 +1,33 @@
-html {
-    scroll-behavior: smooth;
-  }
+body {
+    margin: 0 auto;
+}
   
 /*Navigation*/
 
 .inline-block {
     display: inline-block;
-    vertical-align: top;
+    justify-content: right;
     font-family: 'Exo', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 18px;
+    vertical-align: top;
+    
+
 }
 
 .logo {
     width: 23%;
     padding: 1%;
     display: inline;
+    vertical-align: top;
     text-align: center;
-    justify-content: space-around;
+    justify-content: center;
+    
 }
 
 #navLogo {
     width: 30px;
     height: 30px;
+    vertical-align: top;
 }
 .navigation {
     display: flex;
@@ -35,45 +41,62 @@ nav {
     list-style-type: none;
     width: 100%;
     margin: 0;
-    justify-content: left;
     color: white;
 }
 
 /*Hero Image Content*/
 
-.heroImg {
-    height: 600px;
+.heroSpace {
+    height: auto;
     padding: 15px;
-    font-family: 'Exo', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 16px;
     color: white;
     background-color: #0E1011;
-    display: inline-block;
-    justify-content: flex-start;
-    padding-left: 200px;
-    padding-right: 200px;
-    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "content content"
+    ;
+}
+.content {
+    background-color: #0E1011;
+    color: white;
+    display: grid;
+    padding: 50px;
+    grid-area: content;
+    grid-template-areas:
+    "heroimage intro"
 }
 
 #heroimage {
-    height: 400px;
-    display: inline-block;
+    height: 500px;
+    width: auto;
+    display: grid;
+    grid-area: heroimage;
+
 }
 
-.content {
-    width: 500px;
-    margin: 0 auto;
-    display: inline;
+#intro {
+    display: grid;
+    grid-area: intro;
+    padding: 80px;
+    font-family: 'Exo', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
 }
 
-button {
+#resume {
     background-color: white;
     color: black;
-    width: 150px;
+    width: 200px;
     height: 40px;
     font-family: 'Raleway';
     font-weight: 600;
     padding: 5px;
+}
+
+#welcome {
+    font-size: 40px;
+    font-family: 'Raleway', 'Exo';
 }
 
 /*Footer*/
@@ -99,7 +122,7 @@ footer {
 
 .HeroSection2 {
     font-family: 'Raleway', 'Exo', 'Roboto';
-    background-color:  #222324;
+    background-color:  #1A1B20;
     color: #ffffff;
     text-align: center;
     padding: 50px;
@@ -107,7 +130,7 @@ footer {
 
 /*Skills Section*/
 .mySkills {
-    font-family: 'Proxima Nova', 'Exo', 'Roboto';
+    font-family: 'Proxima Nova', 'Exo';
     background-color: #15262D;
     color:#ffffff;
     margin: 0%;
@@ -116,46 +139,16 @@ footer {
 .flexContainer {
     display: flex;
 }
-#skill1 {
-    width: 33%;
-    margin: 40px;
-    padding: 5px;
-}
-#skill2 {
-    width: 33%;
-    margin: 40px;
-    padding: 5px;
-}
-#skill3 {
-    width: 33%;
-    margin: 40px;
-    padding: 5px;
-}
-#skill1image {
-    width: 300px;
-    margin: 40px;
-    padding: 5px;
-}
-#skill2image {
-    width: 300px;
-    margin: 40px;
-    padding: 5px;
-}
-#skill3image {
-    width: 300px;
-    margin: 40px;
-    padding: 5px;
-}
 
-/*Skills Accordian*/
+/*Skills Accordion*/
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
-    background-color: #eee;
-    color: #444;
+    background-color: #1A1B20;
+    color: white;
     cursor: pointer;
-    padding: 18px;
+    padding: 20px;
     width: 100%;
-    text-align: left;
+    text-align: center;
     border: none;
     outline: none;
     transition: 0.4s;
@@ -163,7 +156,7 @@ footer {
   
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
   .active, .accordion:hover {
-    background-color: rgb(209, 17, 17);
+    background-color: #5a6168;
   }
   
   /* Style the accordion panel. Note: hidden by default */

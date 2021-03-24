@@ -11,11 +11,11 @@
     </head>
     <body>
         <header class="navigation">
-            <div class="inline-block logo">
+            <div class="logo">
                 <img id="navLogo" src="./Images/Logo.png"></img>
             </div>
             <nav class="inline-block">
-                <ul id=navUL>
+                <ul id="navUL">
                     <li class="inline-block">Projects</li>
                     <li class="inline-block">About</li>
                     <li class="inline-block">Resume</li>
@@ -23,13 +23,19 @@
                 </ul>
             </nav>
         </header>
-        <section class="heroImg">
+        <section class="heroSpace">
             <div class="content">
-                <img id="heroimage" src="./Images/Hero2.png"></img>
-                <p>With a lifetime background in music and a decade in the opera world, I bring to the design stage a fresh mind that can set the scene.
-                    I am passionate about finding sustainable solutions through research and empathy while cultivating unique experiences with creativity and innovation.
-                </p>
-                <button id=resume>Download my Resume</button>
+                <div><img id="heroimage" src="./Images/Hero2.png"></img></div>
+                <div id="intro">
+                    <h5 id="welcome">Welcome. I’m Lauren Stocker.</h4>
+                    <p id="introp">
+                        Currently enrolled: UX/UI Design Bootcamp at the University of Texas at Austin
+                        
+                        With a lifetime background in music and a decade in the opera world, I bring to the design stage a fresh mind that can set the scene. 
+                        
+                        I am passionate about finding sustainable solutions through research and empathy while cultivating beautiful, unique experiences with creativity and innovation.</p>
+                    <button id=resume>Download My Resume</button>
+                </div> 
             </div>
         </section>
         <!--Header coding-->
@@ -42,7 +48,7 @@
                 <p>Self-motivation and determination have taken me far, and I’m so excited to have landed here so I can continue to go even further.</p>
             </div>
         </section>
-        <!--My UX/UI Skills section coded using CSS flex-->
+        <!--My UX/UI Skills section coded using jquery/css flex-->
         <section class="mySkills">
             <h1>Areas of Focus</h1>
             <button class="accordion">User Empathy</button>
@@ -58,24 +64,6 @@
             <button class="accordion">User Interface Design</button>
             <div class="panel">
                 <p>Creating beautiful, unique experiences that also provide solutions encompasses a considerable part of my drive for UX/UI design. Information architecture is an area I excel in. I also enjoy cultivating a mood and delightful setting for users, while staying in tune with accessibility standards.</p>
-            </div>
-
-            <div class="flexContainer">
-                <div id="skill1">
-                    <img id="skill1image" src="./Images/user_empathy.PNG"></img>
-                    <h3>User Empathy</h3>
-                    <p>I am passionate about being an advocate for the user from project start to finish. From Qualitative Interviews & Personas to Storyboards & Usability Testing, I deliver results with the user front and center every step of the way. </p>
-                </div>
-                <div id="skill2">
-                    <img id="skill2image" src="./Images/brainstorm2.PNG"></img>
-                    <h3>Open Brainstorming</h3>
-                    <p>Problem solving is what we do, and I believe good collaboration is essential for finding solutions. Throughout the design process, I enjoy creative brainstorming sessions that allow for out-of-the-box ideas and concepts that are attune to user needs.</p>
-                </div>
-                <div id="skill3">
-                    <img id="skill3image" src="./Images/userInterface2.PNG"></img>
-                    <h3>User Interface Design</h3>
-                    <p>Creating beautiful, unique experiences that also provide solutions encompasses a considerable part of my drive for UX/UI design. Information architecture is an area I excel in. I also enjoy cultivating a mood and delightful setting for users, while staying in tune with accessibility standards.</p>
-                </div>
             </div>
         </section>
         <!--My UX/UI work section coded using CSS flex-->
