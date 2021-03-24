@@ -4,7 +4,9 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Exo&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./CSS/style.css"><link>
-        <script src="./Js/index.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src=https://raw.githubusercontent.com/kswedberg/jquery-smooth-scroll/master/jquery.smooth-scroll.js></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <title></title>
     </head>
     <body>
@@ -27,7 +29,7 @@
                 <p>With a lifetime background in music and a decade in the opera world, I bring to the design stage a fresh mind that can set the scene.
                     I am passionate about finding sustainable solutions through research and empathy while cultivating unique experiences with creativity and innovation.
                 </p>
-                <button>Download Resume</button>
+                <button id=resume>Download my Resume</button>
             </div>
         </section>
         <!--Header coding-->
@@ -43,6 +45,21 @@
         <!--My UX/UI Skills section coded using CSS flex-->
         <section class="mySkills">
             <h1>Areas of Focus</h1>
+            <button class="accordion">User Empathy</button>
+            <div class="panel">
+                <p>I am passionate about being an advocate for the user from project start to finish. From Qualitative Interviews & Personas to Storyboards & Usability Testing, I deliver results with the user front and center every step of the way.</p>
+            </div>
+
+            <button class="accordion">Open Brainstorming</button>
+            <div class="panel">
+                <p>Problem solving is what we do, and I believe good collaboration is essential for finding solutions. Throughout the design process, I enjoy creative brainstorming sessions that allow for out-of-the-box ideas and concepts that are attune to user needs.</p>
+            </div>
+
+            <button class="accordion">User Interface Design</button>
+            <div class="panel">
+                <p>Creating beautiful, unique experiences that also provide solutions encompasses a considerable part of my drive for UX/UI design. Information architecture is an area I excel in. I also enjoy cultivating a mood and delightful setting for users, while staying in tune with accessibility standards.</p>
+            </div>
+
             <div class="flexContainer">
                 <div id="skill1">
                     <img id="skill1image" src="./Images/user_empathy.PNG"></img>
@@ -100,5 +117,6 @@
                 <li class="inline-block">Contact</li>
             </ul>
         </footer>
+        <script src="./Js/index.js"></script>
         </body>
 </html>
