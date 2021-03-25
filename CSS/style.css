@@ -62,7 +62,8 @@ nav {
     background-color: #0E1011;
     color: white;
     display: grid;
-    padding: 50px;
+    padding: 70px;
+    height: 600px;
     grid-area: content;
     grid-template-areas:
     "heroimage intro"
@@ -76,29 +77,38 @@ nav {
 
 }
 
-#intro {
-    display: grid;
-    grid-area: intro;
-    padding: 80px;
-    font-family: 'Exo', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 16px;
-}
-
-#resume {
-    background-color: white;
-    color: black;
-    width: 200px;
-    height: 40px;
-    font-family: 'Raleway';
-    font-weight: 600;
+#current {
+    font-size: 18px;
     padding: 5px;
 }
 
 #welcome {
     font-size: 40px;
     font-family: 'Raleway', 'Exo';
+    padding: 5px;
+    font-weight: 500;
 }
 
+#intro {
+    display: grid;
+    grid-area: intro;
+    padding: 50px;
+}
+
+#introp {
+    font-family: 'Exo', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    padding: 0 auto;
+}
+
+#resume {
+    border: none;
+    width: 180px;
+    height: 40px;
+    font-family: 'Raleway';
+    font-weight: 600;
+    padding: 5px;
+}
 /*Footer*/
 
 footer {
@@ -109,7 +119,6 @@ footer {
     width: 100%;
     height: 50px;
     margin: 0;
-
 }
 
 #footerUL {
@@ -136,6 +145,7 @@ footer {
     margin: 0%;
     padding: 10px;
 }
+
 .flexContainer {
     display: flex;
 }
@@ -144,6 +154,8 @@ footer {
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
     background-color: #1A1B20;
+    font-family: 'Raleway';
+    font-size: 16px;
     color: white;
     cursor: pointer;
     padding: 20px;
@@ -156,19 +168,39 @@ footer {
   
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
   .active, .accordion:hover {
-    background-color: #5a6168;
+    background-color: #F4DCDC;
   }
   
   /* Style the accordion panel. Note: hidden by default */
   .panel {
     padding: 0 18px;
-    background-color: white;
+    background-color: #3a4653;
     display: none;
     overflow: hidden;
-    color: black;
+    color: white;
   }
 
 /*My Work Section*/
+button {
+    border: none;
+    padding: 5px;
+    font-family: 'Exo', 'Raleway';
+    background-color: rgb(24, 136, 136);
+    color: white;
+    font-weight: 600;
+    height: 40px;
+    width: 150px;
+/* Add the css property transition here! */
+    transition: all 0.3s ease-out;
+    } 
+      /* active state */
+button:hover {
+     /* Add your hover state css here. */
+    background-color: #F4DCDC;
+    color: black;
+    font-weight: bold;
+    box-shadow: 5px 5px 0px #4d5253;
+    }
 
 .myWork {
     font-family: 'Proxima Nova', 'Exo', 'Roboto';
@@ -211,8 +243,8 @@ h1 {
     grid-area: project2;
     grid-template-areas:
     "project2desc project2img"
-
 }
+
 #Project3 {
     display: grid;
     padding: 50px;
