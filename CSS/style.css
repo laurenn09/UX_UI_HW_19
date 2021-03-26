@@ -48,7 +48,8 @@ nav {
 
 .heroSpace {
     height: auto;
-    padding: 15px;
+    padding-top: 0;
+    padding bottom: 5px;
     color: white;
     background-color: #0E1011;
     display: grid;
@@ -70,7 +71,7 @@ nav {
 }
 
 #heroimage {
-    height: 500px;
+    height: 600px;
     width: auto;
     display: grid;
     grid-area: heroimage;
@@ -97,7 +98,7 @@ nav {
 
 #introp {
     font-family: 'Exo', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     padding: 0 auto;
 }
 
@@ -132,9 +133,11 @@ footer {
 .HeroSection2 {
     font-family: 'Raleway', 'Exo', 'Roboto';
     background-color:  #1A1B20;
+    font-size: 20px;
     color: #ffffff;
     text-align: center;
-    padding: 50px;
+    padding: 100px;
+
 }
 
 /*Skills Section*/
@@ -143,7 +146,7 @@ footer {
     background-color: #15262D;
     color:#ffffff;
     margin: 0%;
-    padding: 10px;
+    padding: 80px;
 }
 
 .flexContainer {
@@ -155,10 +158,11 @@ footer {
 .accordion {
     background-color: #1A1B20;
     font-family: 'Raleway';
-    font-size: 16px;
+    font-size: 20px;
     color: white;
     cursor: pointer;
-    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     width: 100%;
     text-align: center;
     border: none;
@@ -199,7 +203,7 @@ button:hover {
     background-color: #F4DCDC;
     color: black;
     font-weight: bold;
-    box-shadow: 5px 5px 0px #4d5253;
+    box-shadow: 5px 5px 0px #000000;
     }
 
 .myWork {
@@ -211,9 +215,11 @@ button:hover {
 }
 
 h1 {
-    font-weight: 500;
+    font-weight: 600;
+    font-family: 'Raleway';
+    font-size: 35px;
     color: #ffffff;
-    padding: 20px;
+    padding: 50px;
     text-align: center;
 }
 
@@ -288,6 +294,10 @@ h3 {
     color: #ffffff;
     padding: 35px;
     text-align: center;
+}
+
+h4 {
+    font-size: 25px;
 }
 
 /*Media Queries*/
