@@ -7,7 +7,7 @@ body {
 .inline-block {
     display: inline-block;
     justify-content: left;
-    font-family: 'Open-Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Open Sans", "Raleway";
     font-size: 18px;
     vertical-align: top;
 }
